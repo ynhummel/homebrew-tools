@@ -5,20 +5,20 @@
 class GithubEnvTest < Formula
   desc ""
   homepage "https://github.com/ynhummel/homebrew-tools"
-  version "0.0.14"
+  version "0.0.17"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ynhummel/github-env-test/releases/download/v0.0.14/github-env-test_Darwin_x86_64.tar.gz"
-      sha256 "58647ea0fead6ec00c4b525784b794f272b2b38c81a3306b6e5fb8730fc963d0"
+      url "https://github.com/ynhummel/github-env-test/releases/download/v0.0.17/github-env-test_Darwin_x86_64.tar.gz"
+      sha256 "6c9bee1727392d399f2baa4aed5cdcf270487a52c908aa3164732151c73e7abf"
 
       def install
         bin.install "github-env-test"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ynhummel/github-env-test/releases/download/v0.0.14/github-env-test_Darwin_arm64.tar.gz"
-      sha256 "d6649d6f514c0841d20c14d6d08d20def066e12d5d25fe8e2c446a102168816a"
+      url "https://github.com/ynhummel/github-env-test/releases/download/v0.0.17/github-env-test_Darwin_arm64.tar.gz"
+      sha256 "08bed05023ac7cab4d8a50f5c1851f80de85af8e4e85bd87381988aff149a681"
 
       def install
         bin.install "github-env-test"
@@ -28,16 +28,16 @@ class GithubEnvTest < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ynhummel/github-env-test/releases/download/v0.0.14/github-env-test_Linux_arm64.tar.gz"
-      sha256 "743beea7c95663c6e58beb0de09bad88f56171801626ed492707e5c98732cfb3"
+      url "https://github.com/ynhummel/github-env-test/releases/download/v0.0.17/github-env-test_Linux_arm64.tar.gz"
+      sha256 "45ffec4d4ab06a11021085e53fb20931b7591ccd81876776c9d2dd2d15b6ad4b"
 
       def install
         bin.install "github-env-test"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ynhummel/github-env-test/releases/download/v0.0.14/github-env-test_Linux_x86_64.tar.gz"
-      sha256 "9920fa0c8fad15a8fce4f56676caaf79097c10ef5a29917915dfc4393d33e264"
+      url "https://github.com/ynhummel/github-env-test/releases/download/v0.0.17/github-env-test_Linux_x86_64.tar.gz"
+      sha256 "d2dca96faeba6dd13a0171b2e0e48f1157698ff6d92f5bca69a186e9f2498152"
 
       def install
         bin.install "github-env-test"
